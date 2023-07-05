@@ -116,3 +116,17 @@ div.grupo-form > p {
     transition: transform 0.3s, border.3s;
 }
 
+/*Typical device breakipoints
+
+pequenas telas: até 600px
+Celular: 600px ate 768px
+tablet: 768px ate 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px*/
+
+
+@media (min-width: 576px) {
+    .container {
+        wi
+    }
+}
