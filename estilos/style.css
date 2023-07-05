@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
+
+/*Paleta de cores
+
+#D98859 (terracota)
+#F2C49B (pêssego)
+#F24535 (coral)
+#023859 (azul-marinho)
+*/
+
+/*Mobile First*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', Courier, monospace;
+}
+
+body {
+    background-image: linear-gradient(115deg, #f2c49b83, #af6c4663), url(../imagens/office.jpg);
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.4;
+}
+
+header {
+    text-align: center;
+    color:#023859 ; 
+    text-shadow: 1px 1px 5px #0238594f;
+ }
+ 
+ header > h1 {
+     font-size: 2em;
+     padding-top: 35px;
+     line-height: 1.2;
+     font-weight: 400px;
+ }
+ 
+ header > p {
+     font-style: italic;
+     font-weight: bolder;
+     font-size: 1.125em;
+     padding-bottom: 20px;
+ }
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #d98859a8;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+    padding: 25px;
+    color: #042e47;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-control {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+}
+
+.input-radio {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.input-check {
+  margin-right: 5px;  
+}
+
+div.grupo-form > p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#iest {
+    display: inline-block;
+    flex-direction:column;
+}
+
+#imsg {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#bottom-input {
+    font-weight: bold;
+    width: 100%;
+    background-color:#023859;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin-top: 15px;
+    border-radius: 3px; 
+    cursor: pointer;
+}
+
+#bottom-input:hover {
+    background-color:#F24535;
+    transform: translate(-3px, -3px);
+    transition: transform 0.3s, border.3s;
+}
+

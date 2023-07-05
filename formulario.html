@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsideArch Pesquisa</title>
+    <link rel="shortcut icon" href="imagens/insidearch.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+<main class="container">
+    <header>
+        <h1>Pesquisa de Satisfação</h1>
+        
+        <p>
+            Obrigado por dedicar seu tempo para nos ajudar a melhorar nossos serviços
+        </p>
+    </header>
+
+    <form action="pesquisa.php" method="post" autocomplete="on">
+        
+        <div class="grupo-form">
+            <label for="inome">Nome Completo</label>
+            <input type="text" name="nome" id="inome" class="form-control" required maxlength="30" size="30" placeholder="Insira seu nome">
+        </div>
+        <div class="grupo-form">
+            <label for="iemal">E-mail</label>
+            <input type="email" name="email" id="iemail" class="form-control" required minlength="5" maxlength="30" size="30" placeholder="Insira seu e-mail" autocomplete="email">
+        </div>
+        </div>
+        <div class="grupo-form">
+            <p>Estado</p>
+                <select name="estado" id="iest" class="form-control">
+                    <option value="" selected>--Selecione--
+                    </option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste" >
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                    <optgroup label="Região Norte" >
+                        <option value="TO">Tocantins</option>
+                        <option value="PA">Pará</option>
+                        <option value="AM">Amazonas</option>
+                    </optgroup>
+                    <optgroup label="Região Sul" >
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste" >
+                        <option value="GO">Goiás</option>
+                        <option value="DF">Brasília</option>
+                        <option value="MT">Mato Grosso</option>
+                    </optgroup>
+                </select>
+        <div class="grupo-form">
+            <p>Você indicaria o InsideArch para algum amigo?</p>
+            <label for="irecomendacao">
+                <input type="radio" name="recomendacao-usu" value="sim" id="irecomendacao" class="input-radio">Sim
+            </label>
+            <label for="irecomendacao">
+                <input type="radio" name="recomendacao-usu" value="não" id="irecomendacao" class="input-radio">Não
+            </label>
+            <label for="irecomendacao">
+                <input type="radio" name="recomendacao-usu" value="talvez" id="irecomendacao" class="input-radio">Talvez
+            </label>
+        </div>
+        <div class="grupo-form">
+            <p>Como você avalia nossos serviços?</p>
+            <label for="iavaliacao">
+                <input type="radio" name="avaliacao-usu" value="excelente" id="iavaliacao" class="input-radio">Excelente
+            </label>
+            <label for="iavaliacao">
+                <input type="radio" name="avaliacao-usu" value="bom" id="iavaliacao" class="input-radio">Bom
+            </label>
+            <label for="iavaliacao">
+                <input type="radio" name="avaliacao-usu" value="razoavel" id="iavaliacao" class="input-radio">Razoável
+            </label>
+            <label for="iavaliacao">
+                <input type="radio" name="avaliacao-usu" value="ruim" id="iavaliacao" class="input-radio">Ruim
+            </label>
+            <label for="iavaliacao">
+                <input type="radio" name="avaliacao-usu" value="razoavel" id="iavaliacao" class="input-radio">Péssimo
+            </label>
+        </div>
+        <div class="grupo-form">
+            <p>O que você mais gostou em nosso atendimento? (marque todas as alternativas desejadas)
+            </p>
+            <label for="ibriefing">
+                <input type="checkbox" name="briefing" id="ibriefing" class="input-check">Briefing
+            </label>
+            <label for="iatendimento">
+                <input type="checkbox" name="atendimento" id="iatendimento"class="input-check">Atendimento Personalizado
+            </label>
+            <label for="ifacil">
+                <input type="checkbox" name="facil" id="ifacil" class="input-check">Facilidade de pagamento
+            </label>
+            <label for="iobra">
+                <input type="checkbox" name="obra" id="iobra" class="input-check">Acompanhamento de obra
+            </label>
+            <label for="ioutros">
+                <input type="checkbox" name="outros" id="ioutros" class="input-check">Outros
+            </label> 
+        </div>
+        <div class="grupo-form">
+            <p>Nos ajude a melhorar com seu comentário ou sugestão</p>
+                <textarea name="msg" id="imsg" class="input-textarea" cols="30" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+        </div>
+            
+        <div class="grupo-form">
+            <input type="submit" value="Enviar" id="bottom-input">
+        </div>
+
+    </form>
+    
+</main>
+</body>
+</html>
